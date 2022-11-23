@@ -83,7 +83,7 @@ namespace Exercise3
                     char ch = Convert.ToChar(Console.ReadLine());
                     switch (ch)
                     {
-                        case '1': 
+                        case '1':
                             {
                                 obj.traverse();
                             }
@@ -100,7 +100,17 @@ namespace Exercise3
                                 Console.Write("\nEnter the roll number of the student whose records is to be searched: ");
                                 int num = Convert.ToInt32(Console.ReadLine());
                                 if (obj.Search(num, ref prev, ref curr) == false)
-
+                                    Console.WriteLine("\nRecords not found");
+                                else
+                                {
+                                    Console.WriteLine("\nRecords found");
+                                    Console.WriteLine("\nRoll number: " + curr.rollNumber);
+                                    Console.WriteLine("\nName: " + curr.name);
+                                }
+                            }
+                            break;
+                    
+                    }
                 }
             }
         }
