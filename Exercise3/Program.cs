@@ -10,9 +10,9 @@ namespace Exercise3
     {
         /*creates Nodes for the circular nexted list*/
         public int rollNumber; //Mendeskripsikan variabel rollnumber dengan tipe data integer
-        public string name;
-        public string nim;//Mendeklarasikan variabel nama dengan tipe data string
-        public Node next;//Mendeklarasikan variabel nama dengan tipe data string
+        public string name;//Mendeklarasikan variabel name dengan tiipe data string
+        public string nim;//Mendeklarasikan variabel nim dengan tipe data string
+        public Node next;//Mendekkripsikann variabel next dengan tipe node
     }
     class CircularList
     {
@@ -120,6 +120,7 @@ namespace Exercise3
                                     Console.WriteLine("\nRoll number: " + curr.rollNumber);
                                     //Menampilkan nama mahasiswa
                                     Console.WriteLine("\nName: " + curr.name);
+                                    //Menampilkan nim mahasiswa
                                     Console.WriteLine("\nStudent Number : " + curr.nim);
                                 }
                             }
