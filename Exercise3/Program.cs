@@ -22,4 +22,4 @@ namespace Exercise3
             LAST = null;
         }
     }
-}
+} 
