@@ -96,7 +96,7 @@ namespace Exercise3
                                     break;
                                 }
                                 Node prev, curr;
-                                prev = curr = null;
+                                prev = curr = null; 
                                 Console.Write("\nEnter the roll number of the student whose records is to be searched: ");
                                 int num = Convert.ToInt32(Console.ReadLine());
                                 if (obj.Search(num, ref prev, ref curr) == false)
