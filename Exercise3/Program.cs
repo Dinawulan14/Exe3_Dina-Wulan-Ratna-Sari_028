@@ -9,17 +9,18 @@ namespace Exercise3
     class Node
     {
         /*creates Nodes for the circular nexted list*/
-        public int rollNumber;
+        public int rollNumber; //Mendeskripsikan variabel rollnumber dengan tipe data integer
         public string name;
-        public Node next;
+        public string nim;//Mendeklarasikan variabel nama dengan tipe data string
+        public Node next;//Mendeklarasikan variabel nama dengan tipe data string
     }
     class CircularList
     {
-        Node LAST;
+        Node LAST;//Mendeklarasikan node dengan nama "LAST"
 
-        public CircularList()
+        public CircularList()//nama kelas circularlist
         {
-            LAST = null;
+            LAST = null;//Mendeklarasikan node dengan nama LAST
         }
 
         public bool Search(int rollNo, ref Node previous, ref Node current)
@@ -85,27 +86,41 @@ namespace Exercise3
                     {
                         case '1':
                             {
+                                //Akan memanggil dan menjalankan metode untuk menambah data
                                 obj.traverse();
                             }
                             break;
                         case '2':
                             {
+                                //Jika method list empty benrnilai benar
                                 if (obj.listEmpty() == true)
                                 {
                                     Console.WriteLine("\nList is empty");
                                     break;
                                 }
+                                //Node prev dan curr
                                 Node prev, curr;
+                                //Menginisiasi prev dan curr dengan nilai null
                                 prev = curr = null;
+                                //Menampilkan kalimat arahan untuk memasukkan rol number
                                 Console.Write("\nEnter the roll number of the student whose records is to be searched: ");
+                                //Membaca inputan dan simpan ke dalam variabel num
                                 int num = Convert.ToInt32(Console.ReadLine());
+                                //Pengambilan keputusan if else
+                                //Jika bernilai benar
                                 if (obj.Search(num, ref prev, ref curr) == false)
+                                    //Maka records tidak ditemukan
                                     Console.WriteLine("\nRecords not found");
+                                //lainnya
                                 else
                                 {
+                                    //Record ditemukan
                                     Console.WriteLine("\nRecords found");
+                                    //Menampilkan roll number
                                     Console.WriteLine("\nRoll number: " + curr.rollNumber);
+                                    //Menampilkan nama mahasiswa
                                     Console.WriteLine("\nName: " + curr.name);
+                                    Console.WriteLine("\nStudent Number : " + curr.nim);
                                 }
                             }
                             break;
@@ -114,6 +129,7 @@ namespace Exercise3
                                 obj.firstNode();
                             }
                             break;
+
                         case '4':
                             return;
                         default:
