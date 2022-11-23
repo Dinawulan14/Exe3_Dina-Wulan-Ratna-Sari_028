@@ -101,7 +101,7 @@ namespace Exercise3
                                 int num = Convert.ToInt32(Console.ReadLine());
                                 if (obj.Search(num, ref prev, ref curr) == false)
                                     Console.WriteLine("\nRecords not found");
-                                else
+                                else 
                                 {
                                     Console.WriteLine("\nRecords found");
                                     Console.WriteLine("\nRoll number: " + curr.rollNumber);
