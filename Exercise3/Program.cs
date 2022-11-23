@@ -40,7 +40,7 @@ namespace Exercise3
             if (LAST == null)
                 return true;
             else
-                return false;
+                return false; 
         }
     }
 }
